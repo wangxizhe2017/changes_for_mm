@@ -8,7 +8,7 @@
     <ul>
       <a href="#1-mmdetection">1. MMDetection</a>
       <ul>
-        <li><a href="#1-1-comment-off">1.1. Comment off several assertions</a></li>
+        <li><a href="#1-1-comment-off-several assertions">1.1. Comment off several assertions</a></li>
         <li><a href="#1-2-add-xizhe">1.2. Add xizhe</a></li>
         <ul>
           <li><a href="#datasets">Datasets</a></li>
