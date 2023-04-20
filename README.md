@@ -6,7 +6,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#1. mmdetection">MMDetection</a>
+      <a href="#1-mmdetection">1. MMDetection</a>
       <ul>
         <li><a href="#comment-off">Comment off several assertions</a></li>
         <li><a href="#add-xizhe">Add xizhe</a></li>
