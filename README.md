@@ -58,12 +58,21 @@ transforms.py
 ### 2. Add xizhe
 
 It mainly contains the self-defined code files.
+It is recommended to put it under the mmdet directory.
 
 #### Datasets
 
-Add `from xizhe.datasets import *` into: `mmdet.datasets.__init__.py` and `__all__`
+If any dataset class is self-defined, 
 
-If any dataset class is self-defined, add it into 
+add `from ..xizhe.datasets import *` into: `mmdet.datasets.__init__.py`,
+add the class name into `__all__`,
+add the class name into
+
+    .dev_scripts.gather_models.py
+    
+      def get_dataset_name:
+      
+        name_map
 
 
 
