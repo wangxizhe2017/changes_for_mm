@@ -62,7 +62,9 @@ It is recommended to put it under the mmdet directory.
 
 #### Datasets
 
-If any dataset class is self-defined, 
+Everything should be in xizhe.datasets.
+
+##### If any dataset class is self-defined, 
 
 add `from ..xizhe.datasets import *` into: `mmdet.datasets.__init__.py`,
 
@@ -70,15 +72,30 @@ add the class name into `__all__`,
 
 add the class name into
 
-    .dev_scripts.gather_models.py
+    .dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
     
       def get_dataset_name:
       
-        name_map
+        name_map = dict(...add it here...)
+
+##### If any data_loader class is self-defined, 
+
+    mmdet.datasets.builder.py
+      
+      # comment off the original DataLoader
+      # from torch.utils.data import DataLoader
+      # add the new DataLoader
+      from mmdet.xizhe.datasets import XDataLoader as DataLoader
 
 
 
 #### Models
+
+Everything should be in xizhe.models. 
+
+##### If any module class is self-defined, 
+
+add `from ..xizhe.models import *` into: `mmdet.models.__init__.py`.
 
 
 ### Add utils
