@@ -5,7 +5,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
+    <ul>
       <a href="#1-mmdetection">1. MMDetection</a>
       <ul>
         <li><a href="#comment-off">Comment off several assertions</a></li>
@@ -18,7 +18,7 @@
     </li>
     <li>
       <a href="#mmyolo">MMYOLO</a>
-    </li>
+    </ul>
   </ol>
 </details>
 
