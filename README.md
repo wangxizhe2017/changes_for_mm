@@ -6,7 +6,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#mmdetection">MMDetection</a>
+      <a href="#1. mmdetection">MMDetection</a>
       <ul>
         <li><a href="#comment-off">Comment off several assertions</a></li>
         <li><a href="#add-xizhe">Add xizhe</a></li>
@@ -22,7 +22,7 @@
   </ol>
 </details>
 
-## MMDetection
+## 1. MMDetection
 ### Comment off several assertions
 
 Purpose: We can set multi-scale image input in config files.
