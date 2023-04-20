@@ -9,6 +9,7 @@
       <a href="#mmdetection">MMDetection</a>
       <ul>
         <li><a href="#comment-off">Comment off several assertions</a></li>
+        <li><a href="#add-xizhe">Add xizhe</a></li>
         <li><a href="#add-utils">Add utils</a></li>
       </ul>
     </li>
@@ -48,6 +49,16 @@ transforms.py
             assert isinstance(img_scale, tuple) and len(img_scale) == 2
 
 
+### Add xizhe
+
+It mainly contains the self-defined code files.
+
+
 ### Add utils
+
+It mainly contains the self-defined config files.
+
+
+
 
 ## MMYOLO
