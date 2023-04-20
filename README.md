@@ -13,6 +13,9 @@
         <ul>
           <ul><a href="#datasets">Datasets</a></ul>
         </ul>
+        <ul>
+          <ul><a href="#models">Models</a></ul>
+        </ul>
         <ul><a href="#add-utils">Add utils</a></ul>
       </ul>
     </ul>
@@ -56,9 +59,15 @@ transforms.py
 
 It mainly contains the self-defined code files.
 
-
-
 #### Datasets
+
+Add `from xizhe.datasets import *` into: `mmdet.datasets.__init__.py` and `__all__`
+
+If any dataset class is self-defined, add it into 
+
+
+
+#### Models
 
 
 ### Add utils
