@@ -65,7 +65,9 @@ It is recommended to put it under the mmdet directory.
 If any dataset class is self-defined, 
 
 add `from ..xizhe.datasets import *` into: `mmdet.datasets.__init__.py`,
+
 add the class name into `__all__`,
+
 add the class name into
 
     .dev_scripts.gather_models.py
