@@ -17,8 +17,8 @@
   </ol>
 </details>
 
-## 1. MMDetection
-### 1.1 Comment off several assertions
+## MMDetection
+### Comment off several assertions
 
 Purpose: We can set multi-scale image input in config files.
 
@@ -48,4 +48,4 @@ transforms.py
 
 
 
-## 2. MMYOLO
+## MMYOLO
