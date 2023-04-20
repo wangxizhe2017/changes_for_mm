@@ -6,7 +6,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#mmdetection">1. MMDetection</a>
+      <a href="#1-mmdetection">1. MMDetection</a>
       <ul>
         <li><a href="#comment-off">Comment off several assertions</a></li>
         <li><a href="#add-xizhe">Add xizhe</a></li>
@@ -27,7 +27,7 @@
 
 Purpose: We can set multi-scale image input in config files.
 
-Comment off in mmdet.datasets.pipelines:
+Comment off lines in mmdet.datasets.pipelines:
 
 test_time_aug.py
 
@@ -55,6 +55,8 @@ transforms.py
 ### Add xizhe
 
 It mainly contains the self-defined code files.
+
+
 
 #### Datasets
 
