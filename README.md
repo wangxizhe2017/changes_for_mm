@@ -8,22 +8,22 @@
     <ul>
       <a href="#1-mmdetection">1. MMDetection</a>
       <ul>
-        <li><a href="#comment-off">Comment off several assertions</a></li>
-        <li><a href="#add-xizhe">Add xizhe</a></li>
+        <li><a href="#1-1-comment-off">1.1. Comment off several assertions</a></li>
+        <li><a href="#1-2-add-xizhe">1.2. Add xizhe</a></li>
         <ul>
           <li><a href="#datasets">Datasets</a></li>
         </ul>
         <li><a href="#add-utils">Add utils</a></li>
       </ul>
-    </li>
-    <li>
+    </ul>
+    <ul>
       <a href="#mmyolo">MMYOLO</a>
     </ul>
   </ol>
 </details>
 
 ## 1. MMDetection
-### Comment off several assertions
+### 1.1. Comment off several assertions
 
 Purpose: We can set multi-scale image input in config files.
 
@@ -52,7 +52,7 @@ transforms.py
             assert isinstance(img_scale, tuple) and len(img_scale) == 2
 
 
-### Add xizhe
+### 1.2. Add xizhe
 
 It mainly contains the self-defined code files.
 
