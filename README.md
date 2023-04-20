@@ -24,16 +24,19 @@
 ## 1. MMDetection
 ### 1.1 Comment off several assertions
 
-Purpose: We can set multi-scale input in config files.
+Purpose: We can set multi-scale image input in config files.
 
 Comment off in mmdet.datasets.pipelines:
+
 test_time_aug.py
+
     class MultiScaleFlipAug
         def __init__: 
             assert mmcv.is_list_of(self.img_scale, tuple)
             
             
 transforms.py
+
     class Resize
         def __init__:
             assert mmcv.is_list_of(self.img_scale, tuple)
