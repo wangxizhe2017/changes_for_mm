@@ -90,7 +90,7 @@ add the class name into `__all__`,
 
 add the class name into
 
-dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
+.dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
     
     def get_dataset_name:
       name_map = dict(...add it here...)
