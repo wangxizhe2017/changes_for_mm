@@ -84,7 +84,7 @@ Everything should be in xizhe.datasets.
 
 ##### If any dataset class is self-defined, 
 
-add `from ..xizhe.datasets import *` into mmdet.datasets.__init__.py,
+add `from ..xizhe.datasets import *` into mmdet.datasets.\_\_init\_\_.py,
 
 add the class name into `__all__`,
 
@@ -103,7 +103,7 @@ Everything should be in xizhe.models.
 
 ##### If any module class is self-defined, 
 
-add `from ..xizhe.models import *` into mmdet.models.__init__.py.
+add `from ..xizhe.models import *` into mmdet.models.\_\_init\_\_.py.
 
 
 ### Add utils
