@@ -37,7 +37,7 @@
 
 Purpose: We can set multi-scale image input in config files.
 
-Comment off lines in mmdet.datasets.pipelines:
+Comment off the lines in mmdet.datasets.pipelines:
 
 
 test_time_aug.py
