@@ -71,12 +71,12 @@ and all the code inside should NOT import anything from mmdet.datasets in canse 
 
 ##### If any data_loader class is self-defined, 
 
-    mmdet.datasets.builder.py
+mmdet.datasets.builder.py
       
-      # comment off the original DataLoader
-      # from torch.utils.data import DataLoader
-      # add the new DataLoader
-      from mmdet.xizhe.dataloader import XDataLoader as DataLoader
+    # comment off the original DataLoader
+    # from torch.utils.data import DataLoader
+    # add the new DataLoader
+    from mmdet.xizhe.dataloader import XDataLoader as DataLoader
 
 #### Datasets
 
@@ -84,17 +84,16 @@ Everything should be in xizhe.datasets.
 
 ##### If any dataset class is self-defined, 
 
-add `from ..xizhe.datasets import *` into: `mmdet.datasets.__init__.py`,
+add `from ..xizhe.datasets import *` into mmdet.datasets.__init__.py,
 
 add the class name into `__all__`,
 
 add the class name into
 
-    .dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
+dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
     
-      def get_dataset_name:
-      
-        name_map = dict(...add it here...)
+    def get_dataset_name:
+      name_map = dict(...add it here...)
 
 
 
@@ -104,7 +103,7 @@ Everything should be in xizhe.models.
 
 ##### If any module class is self-defined, 
 
-add `from ..xizhe.models import *` into: `mmdet.models.__init__.py`.
+add `from ..xizhe.models import *` into mmdet.models.__init__.py.
 
 
 ### Add utils
