@@ -28,7 +28,11 @@
   </ol>
 </details>
 
+
+
 ## I. MMDetection
+
+
 ### 1. Comment off several assertions
 
 Purpose: We can set multi-scale image input in config files.
@@ -40,23 +44,22 @@ test_time_aug.py
 
     class MultiScaleFlipAug
         def __init__: 
-            assert mmcv.is_list_of(self.img_scale, tuple)
-            
+            # assert mmcv.is_list_of(self.img_scale, tuple)
             
 transforms.py
 
     class Resize
         def __init__:
-            assert mmcv.is_list_of(self.img_scale, tuple)
+            # assert mmcv.is_list_of(self.img_scale, tuple)
             
         def random_select:
-            assert mmcv.is_list_of(img_scales, tuple)
+            # assert mmcv.is_list_of(img_scales, tuple)
             
         def random_sample:
-            assert mmcv.is_list_of(img_scales, tuple) and len(img_scales) == 2
+            # assert mmcv.is_list_of(img_scales, tuple) and len(img_scales) == 2
             
         def random_sample_ratio:
-            assert isinstance(img_scale, tuple) and len(img_scale) == 2
+            # assert isinstance(img_scale, tuple) and len(img_scale) == 2
 
 
 ### 2. Add xizhe
@@ -95,9 +98,7 @@ mmdet.datasets.\_\_init\_\_.py,
     # add
     from ..xizhe.datasets import *
 
-
 add the class name into `__all__`,
-
 
 .dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
     
@@ -115,7 +116,6 @@ Everything should be in xizhe.models.
 
 mmdet.models.\_\_init\_\_.py.
 
-    
     # add
     from ..xizhe.models import *
 
@@ -123,7 +123,6 @@ mmdet.models.\_\_init\_\_.py.
 ### Add utils
 
 It mainly contains the self-defined config files.
-
 
 
 
