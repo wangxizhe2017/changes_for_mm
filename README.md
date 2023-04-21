@@ -11,6 +11,9 @@
         <ul><a href="#1-comment-off-several-assertions">1. Comment off several assertions</a></ul>
         <ul><a href="#2-add-xizhe">2. Add xizhe</a></ul>
         <ul>
+          <ul><a href="#dataloader">DataLoader</a></ul>
+        </ul>
+        <ul>
           <ul><a href="#datasets">Datasets</a></ul>
         </ul>
         <ul>
@@ -60,6 +63,21 @@ transforms.py
 It mainly contains the self-defined code files.
 It is recommended to put it under the mmdet directory.
 
+#### DataLoader
+
+Everything should be in xizhe.dataloader, 
+
+and all the code inside should NOT import anything from mmdet.datasets in canse of circle import.
+
+##### If any data_loader class is self-defined, 
+
+    mmdet.datasets.builder.py
+      
+      # comment off the original DataLoader
+      # from torch.utils.data import DataLoader
+      # add the new DataLoader
+      from mmdet.xizhe.datasets import XDataLoader as DataLoader
+
 #### Datasets
 
 Everything should be in xizhe.datasets.
@@ -77,15 +95,6 @@ add the class name into
       def get_dataset_name:
       
         name_map = dict(...add it here...)
-
-##### If any data_loader class is self-defined, 
-
-    mmdet.datasets.builder.py
-      
-      # comment off the original DataLoader
-      # from torch.utils.data import DataLoader
-      # add the new DataLoader
-      from mmdet.xizhe.datasets import XDataLoader as DataLoader
 
 
 
