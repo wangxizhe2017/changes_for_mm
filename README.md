@@ -65,6 +65,7 @@ transforms.py
 ### 2. Add xizhe
 
 It mainly contains the self-defined code files.
+
 It is recommended to put it under the mmdet directory.
 
 
@@ -72,10 +73,10 @@ It is recommended to put it under the mmdet directory.
 
 Everything should be in xizhe.dataloader, 
 
-and all the code inside should NOT import anything from mmdet.datasets in canse of circle import.
+and all the code inside should NOT import anything from mmdet.datasets in canse of mutual import.
 
 
-##### If any data_loader class is self-defined, 
+##### If any DataLoader class is self-defined, 
 
 
 mmdet.datasets.builder.py
@@ -91,7 +92,7 @@ mmdet.datasets.builder.py
 Everything should be in xizhe.datasets.
 
 
-##### If any dataset class is self-defined, 
+##### If any Dataset class is self-defined, 
 
 mmdet.datasets.\_\_init\_\_.py,
     
@@ -100,7 +101,7 @@ mmdet.datasets.\_\_init\_\_.py,
 
 add the class name into `__all__`,
 
-.dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
+.dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root directory)
     
     # add the class name
     def get_dataset_name:
@@ -112,7 +113,7 @@ add the class name into `__all__`,
 Everything should be in xizhe.models. 
 
 
-##### If any module class is self-defined, 
+##### If any Model class is self-defined, 
 
 mmdet.models.\_\_init\_\_.py.
 
