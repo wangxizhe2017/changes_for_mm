@@ -35,6 +35,7 @@ Purpose: We can set multi-scale image input in config files.
 
 Comment off lines in mmdet.datasets.pipelines:
 
+
 test_time_aug.py
 
     class MultiScaleFlipAug
@@ -63,13 +64,16 @@ transforms.py
 It mainly contains the self-defined code files.
 It is recommended to put it under the mmdet directory.
 
+
 #### DataLoader
 
 Everything should be in xizhe.dataloader, 
 
 and all the code inside should NOT import anything from mmdet.datasets in canse of circle import.
 
+
 ##### If any data_loader class is self-defined, 
+
 
 mmdet.datasets.builder.py
       
@@ -78,32 +82,42 @@ mmdet.datasets.builder.py
     # add the new DataLoader
     from mmdet.xizhe.dataloader import XDataLoader as DataLoader
 
+
 #### Datasets
 
 Everything should be in xizhe.datasets.
 
+
 ##### If any dataset class is self-defined, 
 
-add `from ..xizhe.datasets import *` into mmdet.datasets.\_\_init\_\_.py,
+mmdet.datasets.\_\_init\_\_.py,
+    
+    # add
+    from ..xizhe.datasets import *
+
 
 add the class name into `__all__`,
 
-add the class name into
 
 .dev_scripts.gather_models.py (.dev_scripts is in the mmdetection root folder)
     
+    # add the class name
     def get_dataset_name:
       name_map = dict(...add it here...)
-
 
 
 #### Models
 
 Everything should be in xizhe.models. 
 
+
 ##### If any module class is self-defined, 
 
-add `from ..xizhe.models import *` into mmdet.models.\_\_init\_\_.py.
+mmdet.models.\_\_init\_\_.py.
+
+    
+    # add
+    from ..xizhe.models import *
 
 
 ### Add utils
