@@ -76,7 +76,7 @@ and all the code inside should NOT import anything from mmdet.datasets in canse 
       # comment off the original DataLoader
       # from torch.utils.data import DataLoader
       # add the new DataLoader
-      from mmdet.xizhe.datasets import XDataLoader as DataLoader
+      from mmdet.xizhe.dataloader import XDataLoader as DataLoader
 
 #### Datasets
 
